@@ -1,0 +1,171 @@
+h1{
+    text-align: center;
+    color:red;
+    font-size: 80px;
+    font-family:cursive;
+    font-style: italic;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.header{
+    z-index: 1; 
+    top: -10; 
+    width:100%;
+    min-height: 60vh;
+background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+url("https://www.laurellynn.com/genealogy/images/kennedy/oh_birth_record_minnie_ethelyn_kennedy.jpg")center/cover no-repeat fixed;
+/* flex-direction: column;*/
+margin-top: 0; 
+}
+.hero{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+background-attachment: fixed;
+width: 100%;
+height: 60%;
+}
+.firstletter{
+font-size:140px;
+}
+.hero .title{
+color: #fff;
+font-size: 100px;
+font-family: 'Great Vibes', cursive;
+text-shadow: 5px 5px 10px rgb(4, 192, 255);
+animation-name: htext;
+animation-duration: 3s ;
+}
+@keyframes htext {
+0%   { color :rgb(4, 192, 255); top:-500px;}
+100%   { color : #fff;top:0px;}
+}
+* {
+box-sizing: border-box;
+}
+
+#myInput {
+background-image: url('/css/searchicon.png');
+background-position: 10px 12px;
+background-repeat: no-repeat;
+width: 100%;
+font-size: 16px;
+padding: 12px 20px 12px 40px;
+border: 1px solid #ddd;
+margin-bottom: 12px;
+}
+
+#myUL {
+list-style-type: none;
+padding: 0;
+margin: 5px;
+}
+
+#myUL li{
+border: 1px solid #ddd;
+margin-top: -1px; /* Prevent double borders */
+background-color: #f6f6f6;
+padding: 12px;
+
+display: block
+}
+#myUL li a{
+text-decoration: none;
+font-size: 24px;
+font-weight: bolder;
+color: #111;
+
+}
+
+#myUL li a:hover:not(.header) {
+background-color: #eee;
+}
+.img-circular{
+width: 100px;
+height: 100px;
+background-image: url('https://as1.ftcdn.net/jpg/02/84/98/04/500_F_284980446_xmQh6equqWsgj9LM02vDFaANAdyo5LJt.jpg');
+background-size: cover;
+display:block;
+float:right;
+border-radius: 50px;
+-webkit-border-radius: 500px;
+-moz-border-radius: 500px;
+}
+
+#btn{
+    position: relative;
+    top:-2px;
+    left:8px;
+    width:80px;
+    height: 50px;
+    color:black;
+    cursor:pointer;
+    backdrop-filter: blur(7px) saturate(180%);
+    -webkit-backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgba(247, 243, 243, 0.75);
+    border: 1px solid black;
+}
+
+#input_text{
+    width:500px;
+    height:50px;
+    font-weight: 400;
+    backdrop-filter: blur(7px) saturate(180%);
+    -webkit-backdrop-filter: blur(7px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding:1rem;
+    font-size:1.4rem;
+}
+
+#input_text:hover{
+      border-color: blue;
+}
+
+#input_text:focus{
+    outline:none;
+}
+
+#input{
+    margin-left: 60vh;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
